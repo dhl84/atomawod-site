@@ -1,51 +1,78 @@
 ---
 title: Privacy Policy
 ---
-# AtomaWOD — Privacy Policy
+# AtomaWOD Privacy Policy
 
-Last updated: 13 September 2026
+Last updated: 5 November 2026
 
-AtomaWOD is a personal training log. This policy tells you what the app stores,
-where it goes, and what never leaves your phone.
-
+AtomaWOD is an app for gyms. Athletes log their training in it, and coaches,
+owners and front desk staff run the gym in the same app. This policy tells you
+what the app keeps on its servers, who can see it, and what stays on your phone.
 
 ## Who runs the app
 
 The app owner operates AtomaWOD. Contact: [open an issue on GitHub](https://github.com/dhl84/atomawod-site/issues).
 
-## What the app stores on its servers
+You join AtomaWOD through your gym, with an invite code from the gym. Your gym
+sees and manages the records of its members in the app. For a question about
+the records of your gym, you can also ask your gym.
 
-The app uses Supabase for its database and sign-in. Supabase holds the data in
-the eu-west-1 region.
+## What the app keeps on its servers
 
-| Data | Why |
+| Data | Why the app keeps it |
 |---|---|
-| Your email address and account ID | To sign you in and to attach your records to you |
-| Your name, role, and gym | To show your programming and to separate coach from athlete |
-| Workouts, scores, per-movement results, RPE, and notes | The core purpose of the app |
-| Heart rate summary for a workout you logged (average, maximum, duration, energy) | To show effort for that session |
+| Your email address and account ID | To sign you in, to attach your records to you, and to let your gym invite you |
+| Your name | Your gym and the other members see your display name. A waiver or an agreement that you sign keeps your name and your drawn signature. |
+| Your training: workouts, scores, sets, loads, plans, cardio logs, training maxes and challenges | This is the main purpose of the app. |
+| The health values that you type: body weight, measurements, sleep, soreness, stress, pain answers, habits and check-ins | To show your history, and to help your coach plan your training |
+| A heart rate summary of each Apple Watch workout that you log | To show the effort of that session |
 | A readiness score, a whole number from 0 to 100 | To show how ready you were on the day |
-| App open times and the platform name | To confirm the app is in use |
-| Bodyweight readings you manually enter, with date and morning/evening choice | To keep your private weight history across devices; these are separate from Apple Health readings |
+| The minutes in each heart rate zone and a load band for each workout, only while you share training insights with a coach | So that the coach can see your training load |
+| Daily totals of protein, carbohydrate, fat and energy, only while you share them with a coach | So that the coach can set your nutrition targets |
+| Messages, group threads, announcements and voice messages | To let you talk to your gym |
+| Photos and videos: your profile photo, progress photos, result photos and videos, message attachments, and the files that gym staff add | To show them to you and to the people that you choose |
+| Comments, notes, journal entries, check-in text, reports and appeals | To let you take part in your gym, and to let staff moderate |
+| The phone number of an emergency contact, if you add one | So that your gym can call that person in an emergency |
+| Your gender, if you set it | To show the correct RX load and division |
+| Your birth day and month, only while you share your birthday with your gym | So that your gym can send you a birthday message. The app keeps no year of birth. |
+| The time when you confirmed that you are 18 or older | To record the age check |
+| Your memberships, PT packages, booking fees and the payments that your gym records | To manage your membership |
+| The brand, the last 4 digits and the expiry date of a card that you save with Stripe | To show which card your gym has on file. Stripe keeps the full card number, and AtomaWOD never receives it. |
+| The push token of your phone | To send you notifications |
+| The times when you open the app, and the platform | To confirm that the app is in use |
+
+## Services that process the data
+
+- Supabase keeps the database, the sign-in and the files in the eu-west-1
+  region (Ireland).
+- Render runs the AtomaWOD server.
+- Expo receives the push token and the text of each notification. Expo sends
+  them to Apple, and Apple shows the notification on your phone.
+- Stripe receives your card details when you save a card for your gym.
+- YouTube plays some movement demo videos. When you play one of these videos,
+  your phone connects to youtube-nocookie.com.
 
 ## What stays on your phone
 
-If you connect Apple Health, the app reads these on your device and **does not
-send them anywhere**: sleep, heart rate variability, resting heart rate, VO2
+If you connect Apple Health, the app reads these values on your phone and does
+not send them anywhere: sleep, heart rate variability, resting heart rate, VO2
 max, respiratory rate, blood oxygen, wrist temperature, heart rate recovery,
-body weight, and lean body mass.
+body weight and lean body mass. The app uses them to draw cards while you look
+at them. It saves only the readiness score and the workout values in the table
+above.
 
-The app uses these values to draw the readiness card and the body composition
-card while you look at them. It does not write them to the database. It saves
-only the readiness score itself, a single number.
+The app does not import or upload body weight from Apple Health. The body
+weight in the table above is the weight that you type.
 
-Manually entered bodyweight is different: when you choose Save entry in the
-bodyweight tracker, that reading is stored in your Supabase account. The tracker
-does not import or upload Apple Health bodyweight readings.
+The app reads your Apple Watch workouts and their heart rate, to attach the
+correct workout to your score. It saves the summary of that workout. It does
+not save the raw heart rate samples.
 
-The app reads your Apple Watch workouts and their heart rate so it can attach
-the right workout to the session you logged. The app saves the summary of that one
-workout. It does not save the raw heart rate samples.
+Your location stays on your phone. The app does not send your location to its
+servers. Your date of birth on the Profile screen also stays on your phone.
+
+A photo or a video that you upload goes to the servers as it is. If your camera
+saved the place of the photo in the file, that place goes too.
 
 ## What the app never does
 
@@ -55,45 +82,57 @@ workout. It does not save the raw heart rate samples.
 - It does not track you across other apps or websites.
 - It contains no advertising SDK and no third-party analytics SDK.
 
-## Who else can see your data
+## Who can see your data
 
-- **Gym staff.** Coaches and owners can access permitted shared programming and
-  training records. Workouts you authored and assigned to yourself are private
-  from other app users, including staff, unless you share one with a named
-  member. Your manual bodyweight readings are private by default: the staff of
-  your gym see none of them until you turn on "Share with my coach" on the
-  Bodyweight screen. Turn it off at any time to make your entries private
-  again. Your daily readiness answers (sleep, soreness, stress) are visible to
-  the staff of your gym so your coach can plan your training. Readiness
-  answers are optional, and you can skip the check.
-- **Supabase**, as the hosting provider, processes the data on the owner's
-  behalf and does not use it for its own purposes.
+- **Staff of your gym.** The owner gives each coach and each front desk person
+  only the permissions that they need. Staff with a permission see the records
+  of the members of the gym that the permission covers.
+  - A workout that you make for yourself is private, also from staff. Only a
+    member that you share it with can see it.
+  - Staff see the body weight that you type only while you turn on "Share with
+    my coach".
+  - Staff see your readiness answers (sleep, soreness and stress). The answers
+    are optional, and you can skip the check.
+  - Only the coach that you choose sees your heart rate zones or your macro
+    totals, and only while the share is on.
+- **Other members of your gym.** They see your display name, your profile
+  photo, your results on the class whiteboard and your comments. A member sees
+  a message from you only if you send it to them or to a group that they are in.
+- **The services in the list above**, to run their service.
 
-Authorized service/database administration remains privileged; app-level privacy
-does not prevent the hosting provider or authorized administrators from accessing
-stored data when operating the service.
+The administrators of the service and the hosting providers can access the
+stored data when they operate the service.
 
-## How long data is kept
+## How long the app keeps your data
 
-The app keeps training records until you ask the owner to delete them. App open
-records have no automatic clean-up today.
+The app keeps your records until you delete your account. When you delete your
+account, the app removes your training records and your app-open records.
+
+When you turn off a share with a coach, the app deletes the shared values from
+the servers:
+
+- The last macro share off deletes your macro totals.
+- The training insights share off deletes your heart rate zone rows.
+- The birthday share off deletes your birth day and month.
 
 ## Your choices
 
-- **Withdraw Apple Health access** at any time: iOS Settings → Health → Data
-  Access & Devices → AtomaWOD. The app keeps working without it.
-- **Ask for a copy of your data, or ask the owner to delete it**, by writing to
-  the contact address above. Account deletion removes your training records and
-  your app open records.
-- **Edit or delete a manual bodyweight reading** from the tracker's history.
-  Manual bodyweight is not currently included in the score-history JSON export.
+- To stop Apple Health access, open iOS Settings, then Health, then Data Access
+  & Devices, then AtomaWOD. The app works without it.
+- To get a copy of your data, open Profile, then Your data, then Export My Data.
+- To delete your account, open Profile, then Delete account.
+- To stop notifications, open iOS Settings, then Notifications, then AtomaWOD.
+- To report a post, a comment or a result, use Report next to it. The report
+  also lets you block the member who wrote it.
+- To ask for a copy, a correction or a delete of your data, write to the contact
+  address above.
 
 ## Children
 
-AtomaWOD is not directed at children under 13 and does not knowingly hold their
-data.
+You must be 18 or older to use AtomaWOD. The app asks you to confirm your age
+when you sign up and when you join a gym.
 
 ## Changes
 
-The owner publishes material changes to this policy on this page with a new
-date.
+The owner publishes each important change to this policy on this page, with a
+new date.

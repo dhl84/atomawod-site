@@ -3,7 +3,7 @@ title: Privacy Policy
 ---
 # AtomaWOD Privacy Policy
 
-Last updated: 5 November 2026
+Last updated: 6 November 2026
 
 AtomaWOD is an app for gyms. Athletes log their training in it, and coaches,
 owners and front desk staff run the gym in the same app. This policy tells you
@@ -37,6 +37,7 @@ the records of your gym, you can also ask your gym.
 | Your birth day and month, only while you share your birthday with your gym | So that your gym can send you a birthday message. The app keeps no year of birth. |
 | The time when you confirmed that you are 18 or older | To record the age check |
 | Your memberships, PT packages, booking fees and the payments that your gym records | To manage your membership |
+| Your pay rates and your invoices, if you coach at your gym or work at its front desk | So that your gym can pay you. Only you and the gym owner see them. The owner sees an invoice only after you send it. The app keeps no bank details. |
 | The brand, the last 4 digits and the expiry date of a card that you save with Stripe | To show which card your gym has on file. Stripe keeps the full card number, and AtomaWOD never receives it. |
 | The push token of your phone | To send you notifications |
 | The times when you open the app, and the platform | To confirm that the app is in use |
@@ -69,7 +70,9 @@ correct workout to your score. It saves the summary of that workout. It does
 not save the raw heart rate samples.
 
 Your location stays on your phone. The app does not send your location to its
-servers. Your date of birth on the Profile screen also stays on your phone.
+servers. When staff set the gym position with "Use my current position", the app
+saves the position of their phone on its servers. Your date of birth on the
+Profile screen also stays on your phone.
 
 A photo or a video that you upload goes to the servers as it is. If your camera
 saved the place of the photo in the file, that place goes too.
@@ -107,6 +110,9 @@ stored data when they operate the service.
 
 The app keeps your records until you delete your account. When you delete your
 account, the app removes your training records and your app-open records.
+
+A pay record stays when you delete your account. The app keeps your pay rates and
+each invoice that you sent. It deletes your draft invoices.
 
 When you turn off a share with a coach, the app deletes the shared values from
 the servers:
